@@ -6,6 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack"
 import Onboarding from "./screens/onboarding/Onboarding"
 import BottomTabNavigation from "./navigation/BottomTabNavigation"
 import Search from "./screens/search/Search"
+import HotelSearch from "./screens/search/HotelSearch"
 import CountryDetails from "./screens/details/CountryDetails"
 import Recommended from "./screens/details/Recommended"
 import PlaceDetails from "./screens/details/PlaceDetails"
@@ -74,6 +75,11 @@ export default function App() {
         <Stack.Screen
           name="HotelList"
           component={HotelList}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HotelSearch"
+          component={HotelSearch}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
