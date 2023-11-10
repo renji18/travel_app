@@ -7,6 +7,7 @@ import { COLORS } from "../constants/theme"
 import Location from "../screens/location/Location"
 import Chat from "../screens/chat/Chat"
 import Profile from "../screens/profile/Profile"
+import TopTab from "./TopTab"
 
 const Tab = createBottomTabNavigator()
 
@@ -81,7 +82,7 @@ const BottomTabNavigation = () => {
       />
       <Tab.Screen
         name="Profile"
-        component={Profile}
+        component={TopTab}
         options={{
           tabBarStyle,
           tabBarShowLabel: false,

@@ -24,7 +24,7 @@ const ReviewTile = ({ review }) => {
             <View style={reusableStyle.rowWithSpace("space-between")}>
               <ReusableText
                 color={COLORS.black}
-                family={"meduim"}
+                family={"medium"}
                 size={SIZES.small + 2}
                 text={review.user.username}
               />
@@ -34,7 +34,7 @@ const ReviewTile = ({ review }) => {
                 <WidthSpacer width={10} />
                 <ReusableText
                   color={COLORS.black}
-                  family={"meduim"}
+                  family={"medium"}
                   size={SIZES.small + 2}
                   text={review.updatedAt}
                 />
